@@ -1,0 +1,15 @@
+diff --git a/recipes-example/helloworld/files/helloworld.c b/recipes-example/helloworld/files/helloworld.c
+index ad9ea4f..220bedd 100644
+--- a/recipes-example/helloworld/files/helloworld.c
++++ b/recipes-example/helloworld/files/helloworld.c
+@@ -8,7 +8,7 @@ int main() {
+     #endif
+     
+     #if WELCOME == y
+-    printf(|"Welcome to this world\n")
++    printf("Welcome to this world\n");
+     #endif
+     return 0;
+-}
+\ No newline at end of file
++}
