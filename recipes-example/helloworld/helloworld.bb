@@ -5,13 +5,13 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
 
 SRC_URI = "git://github.com/aasimzia/meta-custom.git;protocol=https;branch=main"
-SRCREV = "80b3b4f4c07394d08548283ae88ef36544c50de4"
+SRCREV = "4c6815ce26a9432f4db5414cea1ab7cf4a3e26b2"
                       
 S = "${WORKDIR}/git"
 
 do_compile() {
     # ${CC} ${CFLAGS} ${LDFLAGS} ${WORKDIR}/helloworld.c -o ${S}/helloworld
-    ${CC} ${CFLAGS} ${LDFLAGS} ${WORKDIR}//recipes-example/helloworld/files/helloworld.c-o ${S}/helloworld
+    ${CC} ${CFLAGS} ${LDFLAGS} ${WORKDIR}//recipes-example/helloworld/files/helloworld.c -o ${S}/helloworld
 }
 
 do_install() {
